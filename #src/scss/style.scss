@@ -1,0 +1,25 @@
+@import "_imports";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: $base-fs + px;
+  font-family: $base-font;
+}
+
+.container {
+  max-width: $container-max-width + px;
+  margin: 0 auto;
+  padding: 0 $container-inner-offset + px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+@import "_header";
